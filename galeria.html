@@ -1,0 +1,97 @@
+<!-- Apartat dels Membres del Projecte. En aquesta secció es presenten els diferents membres que han 
+participat en el projecte. Aquesta inclusió de membres especialitzats en diversos 
+àmbits permet oferir perspectives diverses per a una anàlisi completa del 
+projecte. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galeria</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/Favi.png">
+  <!-- Estils css -->
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+  <link rel="stylesheet" type="text/css" href="css/galeria.css"/>
+  <link rel="stylesheet" type="text/css" href="css/cookies.css"/>
+  <!-- Estils js -->
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cookies.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadDarkMode()"> <!-- Carrega el mode fosc quan la pàgina es carrega -->
+  <!-- Barra de navegació superior -->
+  <div class="topnav" id="Controlbarra">
+    <!-- Links -->
+    <a href="index.html" class="active logo"></a>
+    <a href="index.html" class="actual">Inici</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="carta.html">Carta</a>
+    <a href="ComArribar.html">Com Arribar</a>
+    <a href="reserves.html">Reserves</a>
+    <!-- Icona per activar/desactivar el mode fosc -->
+    <i id="toggleDarkModeIcon" class="dark-mode-icon fas fa-moon" onclick="toggleDarkMode()"></i>
+    <!-- Icona del menú mòbil -->
+    <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveNavbar()">&#9776;</a>
+  </div>
+    <!-- Imatge principal -->
+  <img src="img/norai.jpg" alt="Team" class="topimg" width="600" height="400">
+  <br><br>
+
+  <div class="slider-frame">
+    <ul>
+        <li><img src="img/Salon1.jpg" alt=""></li>
+        <li><img src="img/Salon2.jpg" alt=""></li>
+        <li><img src="img/Salon3.jpg" alt=""></li>
+        <li><img src="img/Salon4.jpg" alt=""></li>
+    </ul>
+</div>
+
+
+
+<br><br><br>
+
+
+  <!--Peu de pàgina-->
+  <footer class="footer">
+    <div class="group-1">
+      <div class="angle-box">
+        <figure>
+          <a href="#">
+            <img src="img/logo_URV.png" alt="Logo URV">
+          </a>
+        </figure>
+      </div>
+      <div class="angle-box">
+        <h2>NOSALTRES</h2>
+        <p>Empresa compromesa amb la qualitat i la innovació</p>
+        <p>Tel.468 978 126 </p> 
+      </div>
+      <div class="angle-box">
+        <h2>SEGUEIX-NOS</h2>
+        <div class="social-angle">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://twitter.com/" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+     <!-- Drets de propietat -->
+    <div class="group-2">
+      <small>&copy; 2025 <b>Victor Diaz Pico</b></small> 
+    </div>
+  </footer>
+   <!-- Botó per tornar a dalt de la pàgina -->
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i class="arrow up"></i></button> <!-- Botó de retonr a dalt -->
+  <!-- Missatge cookies -->
+  <div id="cookie-message">
+    Aquest lloc web utilitza cookies per millorar l'experiència de l'usuari. En continuar utilitzant 
+    aquest lloc, acceptes el nostre ús de <a href="pol_cookies.html">cookies</a>.
+    <button id="accept-cookie">Acceptar</button>
+    <button id="denegar-cookie">Denegar</button>
+  </div>
+</body>
+</html>
